@@ -329,5 +329,147 @@
         }
       ]
     ]
+  },
+  "misrachapu" : {
+    "name": "Miśra chāpu tāḷa",
+    "avartana": 7,
+    "tempoInit": 200,
+    "theka": [
+      [
+        {
+          "aksara": 0,
+          "anga": 0.1,
+          "solkattu": "cymbals"
+        },
+        {
+          "aksara": 1,
+          "anga": 0.2,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 2,
+          "anga": 0.3,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 3,
+          "anga": 1.1,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 4,
+          "anga": 1.2,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 5,
+          "anga": 2.1,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 6,
+          "anga": 2.2,
+          "solkattu": "click"
+        }
+      ],
+      [
+        {
+          "aksara": 0,
+          "anga": 0.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 1,
+          "anga": 0.2,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 2,
+          "anga": 0.3,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 3,
+          "anga": 1.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 4,
+          "anga": 1.2,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 5,
+          "anga": 2.1,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 6,
+          "anga": 2.2,
+          "solkattu": "num"
+        }
+      ]
+    ]
+  },
+  "khandachapu" : {
+    "name": "Khaṇḍa chāpu tāḷa",
+    "avartana": 5,
+    "tempoInit": 200,
+    "theka": [
+      [
+        {
+          "aksara": 0,
+          "anga": 1.1,
+          "solkattu": "cymbals"
+        },
+        {
+          "aksara": 1,
+          "anga": 1.2,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 2,
+          "anga": 2.1,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 3,
+          "anga": 3.1,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 4,
+          "anga": 3.2,
+          "solkattu": "click"
+        }
+      ],
+      [
+        {
+          "aksara": 0,
+          "anga": 1.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 1,
+          "anga": 1.2,
+          "solkattu": "thi"
+        },
+        {
+          "aksara": 2,
+          "anga": 2.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 3,
+          "anga": 3.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 4,
+          "anga": 3.2,
+          "solkattu": "thi"
+        }
+      ]
+    ]
   }
 }
