@@ -1,0 +1,333 @@
+{
+  "adi" : {
+    "name": "Ādi tāḷa",
+    "avartana": 8,
+    "tempoInit": 100,
+    "theka": [
+      [
+        {
+          "aksara": 0,
+          "anga": 1.1,
+          "solkattu": "cymbals"
+        },
+        {
+          "aksara": 1,
+          "anga": 1.2,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 2,
+          "anga": 1.3,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 3,
+          "anga": 1.4,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 4,
+          "anga": 2,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 5,
+          "anga": 0,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 6,
+          "anga": 4,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 7,
+          "anga": 0,
+          "solkattu": "click"
+        }
+      ],
+      [
+        {
+          "aksara": 0,
+          "anga": 1.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 0.5,
+          "anga": 1.15,
+          "solkattu": "thi"
+        },
+        {
+          "aksara": 1,
+          "anga": 1.2,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 1.5,
+          "anga": 1.25,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 2,
+          "anga": 1.3,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 2.5,
+          "anga": 1.35,
+          "solkattu": "thi"
+        },
+        {
+          "aksara": 3,
+          "anga": 1.4,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 3.5,
+          "anga": 1.45,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 4,
+          "anga": 2.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 4.5,
+          "anga": 2.15,
+          "solkattu": "thi"
+        },
+        {
+          "aksara": 5,
+          "anga": 0.1,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 5.5,
+          "anga": 0.15,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 6,
+          "anga": 4.1,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 6.5,
+          "anga": 4.15,
+          "solkattu": "thi"
+        },
+        {
+          "aksara": 7,
+          "anga": 0.1,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 7.5,
+          "anga": 0.15,
+          "solkattu": "dhin"
+        }
+      ],
+      [
+        {
+          "aksara": 0,
+          "anga": 1.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 0.5,
+          "anga": 1.15,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 1,
+          "anga": 1.2,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 1.5,
+          "anga": 1.25,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 2,
+          "anga": 1.3,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 2.5,
+          "anga": 1.35,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 3,
+          "anga": 1.4,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 3.5,
+          "anga": 1.45,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 4,
+          "anga": 2.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 4.5,
+          "anga": 2.15,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 5,
+          "anga": 0.1,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 5.5,
+          "anga": 0.15,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 6,
+          "anga": 4.1,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 6.5,
+          "anga": 4.15,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 7,
+          "anga": 0.1,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 7.5,
+          "anga": 0.15,
+          "solkattu": "num"
+        }
+      ]
+    ]
+  },
+  "rupaka" : {
+    "name": "Rūpaka tāḷa",
+    "avartana": 3,
+    "tempoInit": 70,
+    "theka": [
+      [
+        {
+          "aksara": 0,
+          "anga": 1,
+          "solkattu": "cymbals"
+        },
+        {
+          "aksara": 1,
+          "anga": 2,
+          "solkattu": "click"
+        },
+        {
+          "aksara": 2,
+          "anga": 0,
+          "solkattu": "click"
+        }
+      ],
+      [
+        {
+          "aksara": 0,
+          "anga": 1.1,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 0.5,
+          "anga": 1.15,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 1,
+          "anga": 2.1,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 1.5,
+          "anga": 2.15,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 2,
+          "anga": 0.1,
+          "solkattu": "dhin"
+        },
+        {
+          "aksara": 2.5,
+          "anga": 0.15,
+          "solkattu": "num"
+        }
+      ],
+      [
+        {
+          "aksara": 0,
+          "anga": 1.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 0.25,
+          "anga": 1.125,
+          "solkattu": "thi"
+        },
+        {
+          "aksara": 0.5,
+          "anga": 1.15,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 0.75,
+          "anga": 1.175,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 1,
+          "anga": 2.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 1.25,
+          "anga": 2.125,
+          "solkattu": "thi"
+        },
+        {
+          "aksara": 1.5,
+          "anga": 2.15,
+          "solkattu": "num"
+        },
+        {
+          "aksara": 1.75,
+          "anga": 2.175,
+          "solkattu": "thi"
+        },
+        {
+          "aksara": 2,
+          "anga": 0.1,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 2.25,
+          "anga": 0.125,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 2.5,
+          "anga": 0.15,
+          "solkattu": "dheem"
+        },
+        {
+          "aksara": 2.75,
+          "anga": 0.175,
+          "solkattu": "thi"
+        }
+      ]
+    ]
+  }
+}
