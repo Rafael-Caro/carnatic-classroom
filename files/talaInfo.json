@@ -333,7 +333,7 @@
   "misrachapu" : {
     "name": "Miśra chāpu tāḷa",
     "avartana": 7,
-    "tempoInit": 200,
+    "tempoInit": 150,
     "theka": [
       [
         {
@@ -414,7 +414,7 @@
   "khandachapu" : {
     "name": "Khaṇḍa chāpu tāḷa",
     "avartana": 5,
-    "tempoInit": 200,
+    "tempoInit": 150,
     "theka": [
       [
         {

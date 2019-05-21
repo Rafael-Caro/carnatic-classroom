@@ -392,7 +392,8 @@ function CreateCursor () {
   this.display = function () {
     fill("red");
     stroke(50);
-    strokeWeight(1);
+    strokeWeight(2);
+    line(0, 0, this.x, this.y);
     ellipse(this.x, this.y, cursorRadius, cursorRadius);
   }
 }
