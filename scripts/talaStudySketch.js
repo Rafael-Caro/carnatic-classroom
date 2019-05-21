@@ -367,7 +367,7 @@ function CreateStrokeCircle (aksara, anga, circleType, solkattu) {
     var x = -mouseY+height/2;
     var y = mouseX-width/2;
     var d = dist(this.x, this.y, x, y);
-    if (d < this.radius) {
+    if (d < this.radius && this.solkattu != "CYMBALS" && this.solkattu != "click") {
       soundDic[this.solkattu.toLowerCase()].play();
     }
   }
