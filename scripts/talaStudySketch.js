@@ -146,7 +146,7 @@ function draw() {
   noStroke();
   textAlign(LEFT, BASELINE);
   textSize(12);
-  text(str(tempo)+" mpm", -width/2+10, height/2-30); //tempo box
+  text(str(tempo)+" apm", -width/2+10, height/2-30); //tempo box
 
   push();
   rotate(-90);

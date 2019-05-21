@@ -18,7 +18,7 @@ var currentAvartana;
 var currentTime = 0;
 var charger;
 var clock;
-var mpmTxt;
+var apmTxt;
 var samaList = [];
 //style
 var radiusBig; //radius of the big circle
@@ -266,7 +266,7 @@ function draw() {
   textStyle(NORMAL);
   noStroke();
   fill(50);
-  text(mpmTxt, margin + 65, navBox.y1-margin/2);
+  text(apmTxt, margin + 65, navBox.y1-margin/2);
 
   // position = updateCursor(position);
 
@@ -290,7 +290,7 @@ function start () {
   samaList = [];
   displayTala = false;
   charger.angle = undefined;
-  mpmTxt = undefined;
+  apmTxt = undefined;
   var currentRecording = recordingsInfo[recordingsList[selectMenu.value()].mbid];
   trackDuration = currentRecording.info.duration;
   title = currentRecording.info.title;
@@ -618,12 +618,12 @@ function CreateCurrentAvartana () {
       }
       this.start = samaList[this.index];
       this.end = samaList[this.index+1];
-      var mpm = 60 / ((this.end - this.start) / 10);
-      mpmTxt = str(mpm.toFixed(1)) + " mpm"
+      var apm = 60 / ((this.end - this.start) / talaInfo[recTala.name].avartana);
+      apmTxt = str(apm.toFixed(1)) + " apm"
     } else {
       this.start = undefined;
       this.end = undefined;
-      mpmTxt = undefined;
+      apmTxt = undefined;
     }
   }
 }
