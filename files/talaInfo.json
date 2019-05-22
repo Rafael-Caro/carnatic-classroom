@@ -8,42 +8,50 @@
         {
           "aksara": 0,
           "anga": 1.1,
-          "solkattu": "cymbals"
+          "solkattu": "cymbals",
+          "hand": "c"
         },
         {
           "aksara": 1,
           "anga": 1.2,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         },
         {
           "aksara": 2,
           "anga": 1.3,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         },
         {
           "aksara": 3,
           "anga": 1.4,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         },
         {
           "aksara": 4,
-          "anga": 2,
-          "solkattu": "click"
+          "anga": 2.1,
+          "solkattu": "click",
+          "hand": "c"
         },
         {
           "aksara": 5,
-          "anga": 0,
-          "solkattu": "click"
+          "anga": 2.2,
+          "solkattu": "click",
+          "hand": "w"
         },
         {
           "aksara": 6,
-          "anga": 4,
-          "solkattu": "click"
+          "anga": 3.1,
+          "solkattu": "click",
+          "hand": "c"
         },
         {
           "aksara": 7,
-          "anga": 0,
-          "solkattu": "click"
+          "anga": 3.2,
+          "solkattu": "click",
+          "hand": "w"
         }
       ],
       [
@@ -99,32 +107,32 @@
         },
         {
           "aksara": 5,
-          "anga": 0.1,
+          "anga": 2.2,
           "solkattu": "num"
         },
         {
           "aksara": 5.5,
-          "anga": 0.15,
+          "anga": 2.25,
           "solkattu": "dhin"
         },
         {
           "aksara": 6,
-          "anga": 4.1,
+          "anga": 3.1,
           "solkattu": "num"
         },
         {
           "aksara": 6.5,
-          "anga": 4.15,
+          "anga": 3.15,
           "solkattu": "thi"
         },
         {
           "aksara": 7,
-          "anga": 0.1,
+          "anga": 3.2,
           "solkattu": "num"
         },
         {
           "aksara": 7.5,
-          "anga": 0.15,
+          "anga": 3.25,
           "solkattu": "dhin"
         }
       ],
@@ -181,32 +189,32 @@
         },
         {
           "aksara": 5,
-          "anga": 0.1,
+          "anga": 2.2,
           "solkattu": "dhin"
         },
         {
           "aksara": 5.5,
-          "anga": 0.15,
+          "anga": 2.25,
           "solkattu": "num"
         },
         {
           "aksara": 6,
-          "anga": 4.1,
+          "anga": 3.1,
           "solkattu": "num"
         },
         {
           "aksara": 6.5,
-          "anga": 4.15,
+          "anga": 3.15,
           "solkattu": "dhin"
         },
         {
           "aksara": 7,
-          "anga": 0.1,
+          "anga": 3.2,
           "solkattu": "dhin"
         },
         {
           "aksara": 7.5,
-          "anga": 0.15,
+          "anga": 3.25,
           "solkattu": "num"
         }
       ]
@@ -220,18 +228,21 @@
       [
         {
           "aksara": 0,
-          "anga": 1,
-          "solkattu": "cymbals"
+          "anga": 1.1,
+          "solkattu": "cymbals",
+          "hand": "c"
         },
         {
           "aksara": 1,
-          "anga": 2,
-          "solkattu": "click"
+          "anga": 2.1,
+          "solkattu": "click",
+          "hand": "c"
         },
         {
           "aksara": 2,
-          "anga": 0,
-          "solkattu": "click"
+          "anga": 2.2,
+          "solkattu": "click",
+          "hand": "w"
         }
       ],
       [
@@ -253,16 +264,17 @@
         {
           "aksara": 1.5,
           "anga": 2.15,
-          "solkattu": "dhin"
+          "solkattu": "dhin",
+          "hand": ""
         },
         {
           "aksara": 2,
-          "anga": 0.1,
+          "anga": 2.2,
           "solkattu": "dhin"
         },
         {
           "aksara": 2.5,
-          "anga": 0.15,
+          "anga": 2.25,
           "solkattu": "num"
         }
       ],
@@ -309,17 +321,18 @@
         },
         {
           "aksara": 2,
-          "anga": 0.1,
+          "anga": 2.2,
           "solkattu": "dheem"
         },
         {
           "aksara": 2.25,
-          "anga": 0.125,
-          "solkattu": "dheem"
+          "anga": 2.225,
+          "solkattu": "dheem",
+          "hand": ""
         },
         {
           "aksara": 2.5,
-          "anga": 0.15,
+          "anga": 2.25,
           "solkattu": "dheem"
         },
         {
@@ -339,37 +352,44 @@
         {
           "aksara": 0,
           "anga": 0.1,
-          "solkattu": "cymbals"
+          "solkattu": "cymbals",
+          "hand": "c"
         },
         {
           "aksara": 1,
           "anga": 0.2,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         },
         {
           "aksara": 2,
           "anga": 0.3,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         },
         {
           "aksara": 3,
           "anga": 1.1,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": "c"
         },
         {
           "aksara": 4,
           "anga": 1.2,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         },
         {
           "aksara": 5,
           "anga": 2.1,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": "c"
         },
         {
           "aksara": 6,
           "anga": 2.2,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         }
       ],
       [
@@ -420,27 +440,32 @@
         {
           "aksara": 0,
           "anga": 1.1,
-          "solkattu": "cymbals"
+          "solkattu": "cymbals",
+          "hand": "c"
         },
         {
           "aksara": 1,
           "anga": 1.2,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         },
         {
           "aksara": 2,
           "anga": 2.1,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": "c"
         },
         {
           "aksara": 3,
           "anga": 3.1,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": "c"
         },
         {
           "aksara": 4,
           "anga": 3.2,
-          "solkattu": "click"
+          "solkattu": "click",
+          "hand": ""
         }
       ],
       [

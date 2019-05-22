@@ -330,45 +330,47 @@ function CreateTalaCircle (tala) {
   for (var i = 0; i < theka.length; i++) {
     var stroke = theka[i];
     var aksara = stroke.aksara;
-    var anga; //tali or khali
-    if (int(stroke.anga) > 0) {
-      anga = "tali";
+    var hand = stroke.hand;
+    var tk; //tali or khali
+    if ((stroke.anga * 10) % 10 == 1) {
+      tk = "tali";
     } else {
-      anga = "khali";
+      tk = "khali";
     }
     var circleType;
     if (i == 0) {
       circleType = "sama";
-      var icon = new CreateIcon(aksara, anga, radius1*1.2*1.5, this.avartana);
-      this.icons.push(icon);
-    } else if ((stroke.anga % 1) < 0.101) {
+    } else if ((stroke["anga"] % 1) < 0.101) {
       circleType = 1;
-      var icon = new CreateIcon(aksara, anga, radius1*1.5, this.avartana);
-      this.icons.push(icon);
-    } else if ((stroke.anga * 10 % 1) == 0) {
+    } else if ((stroke["anga"] * 10 % 1) == 0) {
       circleType = 2;
     } else {
       circleType = 3;
     }
-    var strokeCircle = new CreateStrokeCircle(aksara, anga, circleType, this.avartana);
-    this.strokeCircles.push(strokeCircle);
+    if (hand == "c" || hand == "w") {
+      var icon = new CreateIcon(aksara, hand, circleType, this.avartana);
+      this.icons.push(icon);
+    }
+    var solkattu = stroke["solkattu"];
+    var strokeCircle = new CreateStrokeCircle(aksara, tk, circleType, this.avartana);
+    this.strokeCircles[i] = strokeCircle;
   }
 }
 
-function CreateStrokeCircle (aksara, anga, circleType, avartana) {
+function CreateStrokeCircle (aksara, tk, circleType, avartana) {
   var increment = 1;
   this.strokeWeight = 2;
   this.txtW = 0;
 
   if (circleType == "sama") {
-    if (anga == "tali") {
+    if (tk == "tali") {
       this.col = mainColor;
     } else {
       this.col = backColor;
     }
-  } else if (anga == "tali") {
+  } else if (tk == "tali") {
     this.col = aksaraColor;
-  } else if (anga == "khali") {
+  } else if (tk == "khali") {
     this.col = backColor;
   }
 
@@ -577,13 +579,18 @@ function CreateCursor () {
 //   }
 // }
 
-function CreateIcon (aksara, anga, size, avartana) {
+function CreateIcon (aksara, hand, circleType, avartana) {
   this.circleAngle = map(aksara, 0, avartana, 0, 360);
   this.x = radiusBig * iconDistance * cos(this.circleAngle);
   this.y = radiusBig * iconDistance * sin(this.circleAngle);
-  if (anga == "tali") {
+  if (circleType == 0) {
+    this.size = radius1*1.2*1.5;
+  } else {
+    this.size = radius1*1.5;
+  }
+  if (hand == "c") {
     this.img = clap;
-  } else if (anga == "khali") {
+  } else if (hand == "w") {
     this.img = wave;
   }
 
@@ -591,7 +598,7 @@ function CreateIcon (aksara, anga, size, avartana) {
     push();
     translate(this.x, this.y);
     rotate(90);
-    image(this.img, 0, 0, size, size);
+    image(this.img, 0, 0, this.size, this.size);
     pop();
   }
 }
