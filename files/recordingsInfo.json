@@ -7,104 +7,15 @@
       "trackFile": "4e2ee259-5448-4843-b29c-fc74906376f6.mp3",
       "duration": 1238.804
     },
-    "rag": {
-      "name": "Tōḍi",
-      "pitchSpace": [
-        {
-          "svara": "Pa",
-          "pitch": 114.5393219,
-          "cent": -500.00,
-          "function": "",
-          "key": "q"
-        },
-        {
-          "svara": "Dha",
-          "pitch": 128.5662563,
-          "cent": -300.00,
-          "function": "",
-          "key": "w"
-        },
-        {
-          "svara": "Ni",
-          "pitch": 144.3106995,
-          "cent": -100.00,
-          "function": "samvadi",
-          "key": "e"
-        },
-        {
-          "svara": "Sa",
-          "pitch": 152.8919067,
-          "cent": 0.00,
-          "function": "sadja",
-          "key": "a"
-        },
-        {
-          "svara": "Re",
-          "pitch": 171.6154938,
-          "cent": 200.00,
-          "function": "",
-          "key": "s"
-        },
-        {
-          "svara": "Ga",
-          "pitch": 192.6320038,
-          "cent": 400.00,
-          "function": "vadi",
-          "key": "d"
-        },
-        {
-          "svara": "Ma",
-          "pitch": 216.2222595,
-          "cent": 600.00,
-          "function": "",
-          "key": "f"
-        },
-        {
-          "svara": "Pa",
-          "pitch": 229.0795898,
-          "cent": 700.00,
-          "function": "",
-          "key": "g"
-        },
-        {
-          "svara": "Dha",
-          "pitch": 257.1325125,
-          "cent": 900.00,
-          "function": "",
-          "key": "h"
-        },
-        {
-          "svara": "Ni",
-          "pitch": 288.6225586,
-          "cent": 1100.01,
-          "function": "samvadi",
-          "key": "j"
-        },
-        {
-          "svara": "Sa",
-          "pitch": 305.7850647,
-          "cent": 1200.01,
-          "function": "sadja",
-          "key": "z"
-        },
-        {
-          "svara": "Re",
-          "pitch": 343.2323608,
-          "cent": 1400.01,
-          "function": "",
-          "key": "x"
-        },
-        {
-          "svara": "Ga",
-          "pitch": 383.0465698,
-          "cent": 1590.01,
-          "function": "vadi",
-          "key": "c"
-        }
-      ]
+    "raga": {
+      "name": "todi",
+      "sa": 130.813,
+      "phrases": {}
     },
     "tala": {
       "name": "adi",
+      "start": 755.554,
+      "end": 1236.611,
       "sama": [
         755.554,
         761.968,
@@ -196,20 +107,15 @@
       "trackFile": "30ed13b0-58ac-48af-b8ac-f2c14ddbd71a.mp3",
       "duration": 351
     },
-    "rag": {
-      "name": "Kalyāṇi",
-      "pitchSpace": [
-        {
-          "svara": "",
-          "pitch": 0,
-          "cent": 0,
-          "function": "",
-          "key": ""
-        }
-      ]
+    "raga": {
+      "name": "kalyani",
+      "sa": 147.683,
+      "phrases": {}
     },
     "tala": {
       "name": "adi",
+      "start": 19.791,
+      "end": 341.207,
       "sama": [
         19.791,
         25.413,
@@ -279,20 +185,15 @@
       "trackFile": "21f72d0f-5167-4c89-b312-84574b65613b.mp3",
       "duration": 1741
     },
-    "rag": {
-      "name": "Rītigauḷa",
-      "pitchSpace": [
-        {
-          "svara": "",
-          "pitch": 0,
-          "cent": 0,
-          "function": "",
-          "key": ""
-        }
-      ]
+    "raga": {
+      "name": "ritigaula",
+      "sa": 145.987,
+      "phrases": {}
     },
     "tala": {
       "name": "misrachapu",
+      "start": 579.890,
+      "end": 1726.950,
       "sama": [
         579.890,
         582.450,
@@ -692,22 +593,17 @@
       "artist": "Rithvik Raja",
       "link": "https://musicbrainz.org/recording/8ea50416-583b-4a7f-891c-dc21b1a3c2c9",
       "trackFile": "8ea50416-583b-4a7f-891c-dc21b1a3c2c9.mp3",
-      "duration": 1182.484
+      "duration": 1182
     },
-    "rag": {
-      "name": "Bhairavi",
-      "pitchSpace": [
-        {
-          "svara": "",
-          "pitch": 0,
-          "cent": 0,
-          "function": "",
-          "key": ""
-        }
-      ]
+    "raga": {
+      "name": "bhairavi",
+      "sa": 130.813,
+      "phrases": {}
     },
     "tala": {
       "name": "rupaka",
+      "start": 1.068,
+      "end": 1179.410,
       "sama": [
         1.068,
         3.506,
@@ -1262,22 +1158,17 @@
       "artist": "Sumithra Vasudev",
       "link": "https://musicbrainz.org/recording/dc1d1aa8-0ee2-4d2b-a506-c62fa00779ea",
       "trackFile": "dc1d1aa8-0ee2-4d2b-a506-c62fa00779ea.mp3",
-      "duration": 2596.858
+      "duration": 2597
     },
-    "rag": {
-      "name": "Mōhanaṁ",
-      "pitchSpace": [
-        {
-          "svara": "",
-          "pitch": 0,
-          "cent": 0,
-          "function": "",
-          "key": ""
-        }
-      ]
+    "raga": {
+      "name": "mohanam",
+      "sa": 191.521,
+      "phrases": {}
     },
     "tala": {
       "name": "misrachapu",
+      "start": 929.119,
+      "end": 2593.076,
       "sama": [
         929.119,
         932.389,

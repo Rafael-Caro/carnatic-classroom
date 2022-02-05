@@ -1,6 +1,6 @@
 {
   "adi" : {
-    "name": "Ādi tāḷa",
+    "name": "Ādi tāla",
     "avartana": 8,
     "tempoInit": 100,
     "theka": [
@@ -221,7 +221,7 @@
     ]
   },
   "rupaka" : {
-    "name": "Rūpaka tāḷa",
+    "name": "Rūpaka tāla",
     "avartana": 3,
     "tempoInit": 70,
     "theka": [
@@ -344,7 +344,7 @@
     ]
   },
   "misrachapu" : {
-    "name": "Miśra chāpu tāḷa",
+    "name": "Miśra chāpu tāla",
     "avartana": 7,
     "tempoInit": 150,
     "theka": [
@@ -432,7 +432,7 @@
     ]
   },
   "khandachapu" : {
-    "name": "Khaṇḍa chāpu tāḷa",
+    "name": "Khaṇḍa chāpu tāla",
     "avartana": 5,
     "tempoInit": 150,
     "theka": [
