@@ -1,0 +1,22 @@
+{
+  "bhairavi": {
+    "name": "Bhairavi",
+    "pitchSpace": ["Sa", "Ri2", "Ga2", "Ma1", "Pa", "Dha1", "Dha2", "Ni2"]
+  },
+  "kalyani": {
+    "name": "Kalyāṇi",
+    "pitchSpace": ["Sa", "Ri2", "Ga3", "Ma2", "Pa", "Dha2", "Ni3"]
+  },
+  "mohanam": {
+    "name": "Mōhanaṁ",
+    "pitchSpace": ["Sa", "Ri2", "Ga3", "Pa", "Dha2"]
+  },
+  "ritigaula": {
+    "name": "Rītigauḷa",
+    "pitchSpace": ["Sa", "Ri2", "Ga2", "Ma1", "Pa", "Dha2", "Ni2"]
+  },
+  "todi": {
+    "name": "Tōḍi",
+    "pitchSpace": ["Sa", "Ri1", "Ga2", "Ma1", "Pa", "Dha1", "Ni2"]
+  }
+}
