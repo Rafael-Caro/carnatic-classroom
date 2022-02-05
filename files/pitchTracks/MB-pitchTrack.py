@@ -2,12 +2,9 @@ import numpy as np
 import json
 
 ## GLOBAL VARIABLES (to be filled)
-pitchTrackFile = './Rithvik Raja - Emani Migula_pitch.txt' # Path to the pitch track file
-jsonFile = './4e2ee259-5448-4843-b29c-fc74906376f6_pitchTrack.json' # Path (including file name and .json extesion) of the returned file
-sadja = 130.812783 # Pitch of sa in Hz
-
-print('Processing', pitchTrackFile.split('/')[-1])
-print('Sa:', round(sadja, 3))
+pitchTrackFile = './Mati Matiki.pitch.txt' # Path to the pitch track file
+jsonFile = './dc1d1aa8-0ee2-4d2b-a506-c62fa00779ea_pitchTrack.json' # Path (including file name and .json extesion) of the returned file
+sadja = 191.521 # Pitch of sa in Hz
 
 ## FUNCTIONS
 def herz2cent(p, r):
@@ -51,10 +48,8 @@ def centsOrSilence(p, r):
 
 ## PITCH TRACK CONVERSION
 # Load pitch track (check that the delimiter is correct!)
-with open(pitchTrackFile, 'r') as f:
-    data = f.readlines()
-len(data)
-pitchTrack = json.loads(data[0])
+pitchTrack = np.genfromtxt(pitchTrackFile, delimiter='\t')
+print(pitchTrack)
 
 # Convert the pitch track into the desired format
 MB_pitchTrack = {}
@@ -68,4 +63,3 @@ for i in range(len(pitchTrack)):
 
 # Dump the newly formated pitch track as a json file
 json.dump(MB_pitchTrack, open(jsonFile, 'w'), separators=(',',':'))
-print('Saved to', jsonFile)
