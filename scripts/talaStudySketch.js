@@ -83,11 +83,11 @@ function setup() {
   //language
   var lang = select("html").elt.lang;
   if (lang == "en") {
-    lang_select = "Select a tāl";
+    lang_select = "Select a tāla";
     lang_start = "Start!";
     lang_stop = "Stop";
   } else if (lang == "es") {
-    lang_select = "Elige un tāl";
+    lang_select = "Elige un tāla";
     lang_start = "¡Comienza!";
     lang_stop = "Para";
   }
@@ -116,7 +116,7 @@ function setup() {
   showCursor = createCheckbox(' cursor', true)
     .position(10, 90)
     .parent("sketch-holder");
-  showTala = createCheckbox(' tāl', true)
+  showTala = createCheckbox(' tāla', true)
     .position(10, showCursor.position()["y"]+showCursor.height+5)
     .changed(function() {
       showTheka.checked(showTala.checked());

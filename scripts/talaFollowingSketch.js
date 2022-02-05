@@ -151,7 +151,7 @@ function setup() {
   showCursor = createCheckbox(' cursor', true)
     .position(margin, 90)
     .parent("sketch-holder");
-  showTala = createCheckbox(' tāl', true)
+  showTala = createCheckbox(' tāla', true)
     .position(margin, showCursor.position()["y"]+showCursor.height+margin/2)
     .parent("sketch-holder");
   showCursor.attribute("disabled", "true");

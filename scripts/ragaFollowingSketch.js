@@ -179,7 +179,7 @@ function setup () {
   // showTheka = createCheckbox(' ṭhekā', true)
   //   .position(extraSpaceW + margin, talY + talRadius)
   //   .parent("sketch-holder");
-  showTala = createCheckbox(' tāl', true)
+  showTala = createCheckbox(' tāla', true)
     // .position(extraSpaceW + margin, showTheka.position()["y"] + showTheka.height)
     .position(extraSpaceW + margin, talY + talaRadius)
     // .changed(function() {
