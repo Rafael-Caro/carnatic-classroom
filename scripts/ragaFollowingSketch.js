@@ -25,7 +25,7 @@ var pitchTrack;
 var trackFile;
 var track;
 var trackDuration;
-var ragName;
+var ragaName;
 var artist;
 var link;
 
@@ -213,7 +213,7 @@ function draw () {
   strokeWeight(5);
   stroke(frontColor);
   fill(backColor);
-  text(ragName, extraSpaceW + mainSpace/2, extraSpaceH + margin*3);
+  text(ragaName, extraSpaceW + mainSpace/2, extraSpaceH + margin*3);
 
   stroke(0, 50);
   strokeWeight(1);
@@ -367,7 +367,7 @@ function start () {
   var raga = ragaInfo[currentRecording.raga.name];
   var sa = currentRecording.raga.sa;
   // var intonation = currentRecording.raga.intonation;
-  ragName = "Rāga " + raga.name;
+  ragaName = "Rāga " + raga.name;
   artist = currentRecording.info.artist;
   link = currentRecording.info.link;
   infoLink.attribute("href", link)
