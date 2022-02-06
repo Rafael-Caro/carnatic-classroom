@@ -234,11 +234,18 @@ function start() {
       currentTheka = thekaMenu.value();
     })
     .parent("sketch-holder");
+  var handAksaras = [];
   for (var i = 0; i < theka.length; i++) {
     var thisTheka = theka[i];
     var optionLabel;
     if (i == 0) {
       optionLabel = "No ṭhekā";
+      for (var j = 0; j < thisTheka.length; j++) {
+        if (thisTheka[j].hand != "") {
+          handAksaras.push(thisTheka[j].aksara);
+        }
+      }
+      console.log(handAksaras);
     } else {
       optionLabel = "Ṭhekā " + str(i);
     }
@@ -247,6 +254,7 @@ function start() {
     for (var j = 0; j < thisTheka.length; j++) {
       var stroke = thisTheka[j];
       var aksara = stroke.aksara;
+      console.log(aksara);
       var hand = stroke.hand;
       var tk; //tali or khali
       if ((stroke.anga * 10) % 10 == 1) {
@@ -257,7 +265,9 @@ function start() {
       var circleType;
       if (j == 0) {
         circleType = "sama";
-      } else if ((stroke["anga"] % 1) < 0.101) {
+      // } else if ((stroke["anga"] % 1) < 0.101) {
+      //   circleType = 1;
+      } else if (handAksaras.includes(aksara)) {
         circleType = 1;
       } else if ((stroke["anga"] * 10 % 1) == 0) {
         circleType = 2;
@@ -319,8 +329,8 @@ function CreateStrokeCircle (aksara, tk, circleType, solkattu) {
     this.txtStyle = BOLD;
     this.volume = 1;
   } else if (circleType == 2){
-    this.radius = radius2;
-    this.txtSize = radius2 * 0.75;
+    this.radius = radius2 * 0.6;
+    this.txtSize = radius1 * 0.75;
     this.txtStyle = BOLD;
     this.volume = 0.5;
   } else {

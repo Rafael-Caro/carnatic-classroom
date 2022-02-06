@@ -995,12 +995,16 @@ function CreateTalaCircle (tala) {
     var circleType;
     if (i == 0) {
       circleType = "sama";
-    } else if ((stroke["anga"] % 1) < 0.101) {
+    // } else if ((stroke["anga"] % 1) < 0.101) {
+    //   circleType = 1;
+    // } else if ((stroke["anga"] * 10 % 1) == 0) {
+    //   circleType = 2;
+    } else if (hand != "") {
       circleType = 1;
-    } else if ((stroke["anga"] * 10 % 1) == 0) {
-      circleType = 2;
+    // } else {
+    //   circleType = 3;
     } else {
-      circleType = 3;
+      circleType = 2;
     }
     if (hand == "c" || hand == "w") {
       var icon = new CreateIcon(aksara, hand, circleType, this.avartana);
@@ -1106,18 +1110,18 @@ function CreateStrokeCircle (aksara, tk, circleType, avartana) {
 
   if (circleType == "sama") {
     this.radius = radius1 * 1.2;
-  // } else if (circleType == 1) {
-  //   this.radius = radius1;
-  // } else if (circleType == 2){
-  //   this.radius = radius2;
+  } else if (circleType == 1) {
+    this.radius = radius1;
+  } else if (circleType == 2){
+    this.radius = radius2 * 0.6;
   // } else {
   //   this.radius = radius2;
   //   this.col = color(0, 0);
   //   this.strokeWeight = 0;
   //   increment = 1.05;
   // }
-  } else {
-    this.radius = radius1;
+  // } else {
+  //   this.radius = radius1;
   }
 
   this.circleAngle = map(aksara, 0, avartana, 0, 360);
