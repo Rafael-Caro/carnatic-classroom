@@ -322,12 +322,12 @@ function draw () {
 
   if (displayTala && showTala.checked()) {
     textAlign(CENTER, CENTER);
-    textSize(20);
+    textSize(25);
     textStyle(NORMAL);
     stroke(backColor);
     strokeWeight(5);
     fill(frontColor);
-    text(talName, talX, talY);
+    text(talaInfo[recTala.name]["name"], talX, talY);
   }
 
   // for (var i = 0; i < talBoxes.length; i++) {
