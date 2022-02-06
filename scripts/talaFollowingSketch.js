@@ -51,7 +51,8 @@ var loaded = false;
 var margin = 10;
 var navBoxH = 60;
 var navBox;
-var secBoxes = [];
+// var secBoxes = [];
+var talaBox;
 var infoLink;
 // Sounds
 var trackDuration;
@@ -256,8 +257,11 @@ function draw() {
     clock.display();
   }
 
-  for (var i = 0; i < secBoxes.length; i++) {
-    secBoxes[i].display();
+  // for (var i = 0; i < secBoxes.length; i++) {
+  //   secBoxes[i].display();
+  // }
+  if (talaBox != undefined) {
+    talaBox.display();
   }
   navBox.displayFront();
 
@@ -285,7 +289,8 @@ function start () {
   loaded = false;
   paused = true;
   currentTime = 0;
-  secBoxes = [];
+  // secBoxes = [];
+  talaBox;
   talaCircle;
   samaList = [];
   displayTala = false;
@@ -302,7 +307,7 @@ function start () {
   navCursor = new CreateNavCursor();
   recTala = currentRecording.tala;
   samaList = recTala.sama;
-  // secBox = new CreateSecBox(tala);
+  talaBox = new CreateTalaBox(recTala);
   // secBoxes.push(secBox);
   talaCircle = new CreateTalaCircle(recTala.name);
   currentAvartana = new CreateCurrentAvartana();
@@ -484,25 +489,25 @@ function CreateNavCursor () {
   }
 }
 
-function CreateSecBox (tala) {
-  if (tala.tala[tala.tala.length-1] == 'l') {
-    this.tala = tala.tala;
-  } else {
-    this.tala = tala.tala.slice(0, tala.tala.length-1);
-  }
-  this.talaIndex = tala.tala;
-  this.name = talaInfo[this.tala].nameTrans;
-  this.fullName = talaInfo[this.tala].name + "\n" + this.name;
+function CreateTalaBox (recTala) {
+  // if (tala.tala[tala.tala.length-1] == 'l') {
+  //   this.tala = tala.tala;
+  // } else {
+  //   this.tala = tala.tala.slice(0, tala.tala.length-1);
+  // }
+  // this.talaIndex = tala.tala;
+  this.name = talaInfo[recTala.name].name;
+  // this.fullName = talaInfo[this.tala].name + "\n" + this.name;
   this.h = 25;
-  this.x1 = map(tala.start, 0, trackDuration, navBox.x1+navCursorW/2, navBox.x2-navCursorW/2);
-  this.x2 = map(tala.end, 0, trackDuration, navBox.x1+navCursorW/2, navBox.x2-navCursorW/2);
+  this.x1 = map(recTala.start, 0, trackDuration, navBox.x1+navCursorW/2, navBox.x2-navCursorW/2);
+  this.x2 = map(recTala.end, 0, trackDuration, navBox.x1+navCursorW/2, navBox.x2-navCursorW/2);
   this.w = this.x2-this.x1;
   this.boxCol = color(255, 100);
   this.txtCol = color(100);
   this.txtStyle = NORMAL;
   this.txtBorder = 0;
-  this.sama = talaList[this.talaIndex].sama;
-  this.currentSamaIndex = 0;
+  // this.sama = talaList[this.talaIndex].sama;
+  // this.currentSamaIndex = 0;
   this.off = function () {
     this.boxCol = color(255);
     this.txtCol = color(100);
