@@ -56,7 +56,8 @@ var talaCursor;
 var talX;
 var talY;
 var talaRadius;
-var secBoxes = [];
+// var secBoxes = [];
+var talaBox;
 var talaCircle;
 var displayTala;
 var talList = {};
@@ -341,6 +342,10 @@ function draw () {
   fill(frontColor);
   text(apmTxt, extraSpaceW + margin + 65, navBox.y1 - margin/2);
 
+
+  if (talaBox != undefined) {
+    talaBox.display();
+  }
   navBox.displayFront();
 }
 
@@ -351,7 +356,8 @@ function start () {
   paused = true;
   loaded = false;
   currentTime = 0;
-  secBoxes = [];
+  // secBoxes = [];
+  talaBox;
   talaCircle;
   // talName = undefined;
   samaList = [];
@@ -454,6 +460,7 @@ function start () {
   // }
   recTala = currentRecording.tala;
   samaList = recTala.sama;
+  talaBox = new CreateTalaBox(recTala);
   talaCircle = new CreateTalaCircle(recTala.name);
   currentAvartana = new CreateCurrentAvartana();
   // shade = new CreateShade();
@@ -916,6 +923,55 @@ function CreateCurrentAvartana () {
 //     this.strokeCircles.push(strokeCircle);
 //   }
 // }
+
+function CreateTalaBox (recTala) {
+  // if (tala.tala[tala.tala.length-1] == 'l') {
+  //   this.tala = tala.tala;
+  // } else {
+  //   this.tala = tala.tala.slice(0, tala.tala.length-1);
+  // }
+  // this.talaIndex = tala.tala;
+  this.name = talaInfo[recTala.name].name;
+  // this.fullName = talaInfo[this.tala].name + "\n" + this.name;
+  this.h = 25;
+  this.x1 = map(recTala.start, 0, trackDuration, navBox.x1+navCursorW/2, navBox.x2-navCursorW/2);
+  this.x2 = map(recTala.end, 0, trackDuration, navBox.x1+navCursorW/2, navBox.x2-navCursorW/2);
+  this.w = this.x2-this.x1;
+  this.boxCol = color(255, 100);
+  this.txtCol = color(100);
+  this.txtStyle = NORMAL;
+  this.txtBorder = 0;
+  // this.sama = talaList[this.talaIndex].sama;
+  // this.currentSamaIndex = 0;
+  this.off = function () {
+    this.boxCol = color(255);
+    this.txtCol = color(100);
+    this.txtStyle = NORMAL;
+    this.txtBorder = 0;
+  }
+  this.on = function () {
+    this.boxCol = mainColor;
+    this.txtCol = color(0);
+    this.txtStyle = BOLD;
+    this.txtBorder = 1;
+  }
+
+  this.display = function () {
+    this.boxCol.setAlpha(100);
+    fill(this.boxCol);
+    noStroke();
+    rect(this.x1, navBox.y1, this.w, this.h);
+    textAlign(LEFT, BOTTOM);
+    textSize(this.h * 0.7);
+    fill(this.txtCol);
+    textStyle(this.txtStyle);
+    fill(0);
+    mainColor.setAlpha(255);
+    stroke(mainColor);
+    strokeWeight(this.txtBorder);
+    text(this.name, this.x1+2, navBox.y1 + this.h*0.92);
+  }
+}
 
 function CreateTalaCircle (tala) {
   this.strokeCircles = [];
