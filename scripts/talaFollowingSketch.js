@@ -590,8 +590,10 @@ function CreateCursor () {
 
 function CreateIcon (aksara, hand, circleType, avartana) {
   this.circleAngle = map(aksara, 0, avartana, 0, 360);
-  this.x = radiusBig * iconDistance * cos(this.circleAngle);
-  this.y = radiusBig * iconDistance * sin(this.circleAngle);
+  // this.x = radiusBig * iconDistance * cos(this.circleAngle);
+  // this.y = radiusBig * iconDistance * sin(this.circleAngle);
+  this.x = radiusBig * cos(this.circleAngle);
+  this.y = radiusBig * sin(this.circleAngle);
   if (circleType == 0) {
     this.size = radius1*1.2*1.5;
   } else {
