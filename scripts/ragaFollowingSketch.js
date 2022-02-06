@@ -94,8 +94,8 @@ function preload() {
   recordingsInfo = loadJSON("../files/recordingsInfo.json");
   ragaInfo = loadJSON("../files/ragaInfo.json")
   talaInfo = loadJSON("../files/talaInfo.json");
-  wave = loadImage("../images/wave.svg");
-  clap = loadImage("../images/clap.svg");
+  wave = loadImage("../images/waveKhali.svg");
+  clap = loadImage("../images/clapTali.svg");
 }
 
 function setup () {
@@ -1160,10 +1160,10 @@ function CreateStrokeCircle (aksara, tk, circleType, avartana) {
 
 function CreateIcon (aksara, hand, circleType, avartana) {
   this.circleAngle = map(aksara, 0, avartana, 0, 360);
-  this.x = talaRadius * iconDistance * cos(this.circleAngle);
-  this.y = talaRadius * iconDistance * sin(this.circleAngle);
-  // this.x = talaRadius * cos(this.circleAngle);
-  // this.y = talaRadius * sin(this.circleAngle);
+  // this.x = talaRadius * iconDistance * cos(this.circleAngle);
+  // this.y = talaRadius * iconDistance * sin(this.circleAngle);
+  this.x = talaRadius * cos(this.circleAngle);
+  this.y = talaRadius * sin(this.circleAngle);
   if (circleType == 0) {
     this.size = radius1*1.2*1.5;
   } else {
