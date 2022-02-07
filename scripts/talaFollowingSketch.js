@@ -561,9 +561,9 @@ function CreateCursor () {
     fill("red");
     stroke(50);
     strokeWeight(2);
-    if (loaded) {
-      line(0, 0, this.x, this.y);
-    }
+    // if (loaded) {
+    //   line(0, 0, this.x, this.y);
+    // }
     ellipse(this.x, this.y, cursorRadius, cursorRadius);
   }
 }
