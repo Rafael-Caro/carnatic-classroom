@@ -2,7 +2,7 @@ import numpy as np
 import json
 
 ## GLOBAL VARIABLES (to be filled)
-pitchTrackFile = './Mati Matiki.pitch.txt' # Path to the pitch track file
+pitchTrackFile = './136_Mati_Matiki.csv' # Path to the pitch track file
 jsonFile = './dc1d1aa8-0ee2-4d2b-a506-c62fa00779ea_pitchTrack.json' # Path (including file name and .json extesion) of the returned file
 sadja = 191.521 # Pitch of sa in Hz
 
@@ -48,7 +48,7 @@ def centsOrSilence(p, r):
 
 ## PITCH TRACK CONVERSION
 # Load pitch track (check that the delimiter is correct!)
-pitchTrack = np.genfromtxt(pitchTrackFile, delimiter='\t')
+pitchTrack = np.genfromtxt(pitchTrackFile, delimiter=', ')
 print(pitchTrack)
 
 # Convert the pitch track into the desired format
